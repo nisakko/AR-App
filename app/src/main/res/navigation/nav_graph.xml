@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_ar_setup_fragment">
+
+    <fragment
+        android:id="@+id/nav_ar_setup_fragment"
+        android:name="com.example.arapp.presentation.ar.ARSetupFragment" >
+        <action
+            android:id="@+id/action_ar_setup_fragment_to_ar_fragment"
+            app:destination="@id/nav_ar_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ar_fragment"
+        android:name="com.example.arapp.presentation.ar.ARFragment" />
+
+</navigation>
